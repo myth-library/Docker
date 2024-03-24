@@ -4,6 +4,14 @@
 
 - command template --> `docker build -t <tag_name> <location_to_dockerfile>`
 
+  - `.` means, current directory
+
 ```
-docker build -t hello-world .
+docker build -t hello-docker .
+```
+
+## How to run a docker image
+
+```
+docker run hello-docker
 ```
