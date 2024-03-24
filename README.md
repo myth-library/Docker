@@ -1,17 +1,18 @@
-# Docker
+# Dockerfile Instructions
 
-## How to build a docker image using a Dockerfile
+## Simple Dockerfile
 
-- command template --> `docker build -t <tag_name> <location_to_dockerfile>`
+- typically starts with a `base image (FROM)`
 
-  - `.` means, current directory
-
+```dockerfile
+FROM node:alpine
+COPY . /app
+CMD node /app/app.js
 ```
-docker build -t hello-docker .
-```
 
-## How to run a docker image
-
-```
-docker run hello-docker
+```dockerfile
+FROM node:alpine
+COPY . /app
+WORKDIR /app
+CMD node app.js
 ```
