@@ -17,3 +17,8 @@
   - e.g., Changes of the container A not visible to container B
 
 <br/>
+
+## How to choose correct base image for application?
+
+- <https://docs.docker.com/samples/>
+- We can choose correct base image based on Databases, Framework, Languages etc.
