@@ -74,3 +74,32 @@
   ```
 
   - ctrl + w --> remove entire word in one go
+
+<br />
+
+- Edit & view files
+
+  ```sh
+  nano docker.txt
+    # ctrl + x --> Y --> confirm file name + enter
+
+  cat docker.txt
+
+  more docker.txt  # only for scroll down
+      # press `enter` to read line by line
+      # press `space` to go to next page
+      # press `q` to exit
+
+  apt install less
+  less docker.txt
+      # up & down arrows to scroll up & down
+      # press `enter` to read line by line
+      # press `space` to go to next page
+      # press `q` to exit
+
+  head -n 5 docker.txt
+      # first 5 line displayed
+
+  tail -n 5 docker.txt
+      # last 5 line displayed
+  ```
